@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package compiler;
-
+import view.compilerMainView ;
 /**
  *
  * @author user
@@ -16,6 +16,8 @@ public class Compiler {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        compilerMainView mainView = new compilerMainView();
+        mainView.show();
     }
     
 }
