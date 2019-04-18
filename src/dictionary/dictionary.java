@@ -33,7 +33,7 @@ public class dictionary {
         
         for(int i=0;i<entries.size();i++)
         {
-            if(key == entries.get(i).getKey())
+            if(key.endsWith(entries.get(i).getKey()))
             {
                 return entries.get(i).getValue();
             }
