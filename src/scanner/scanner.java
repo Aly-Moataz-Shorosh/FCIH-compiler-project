@@ -29,13 +29,14 @@ public class scanner {
          intitKeywords();
     }
     
-    public void generateScanner(String input)
+    public void generateScanner(char input[])
     {
         String token ="" ;
         int lineNUM =1;
         //System.out.println(input);
-        for (int i = 0; i < input.length(); i++){
-            char c = input.charAt(i);        
+        for (int i = 0; i < input.length; i++){
+            char c = input[i];  
+            
             //System.out.println(c);
             if(c == ' ' || c == '\n' || c == '\t' || c == ';')
             {

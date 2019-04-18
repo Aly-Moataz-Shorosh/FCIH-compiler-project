@@ -145,7 +145,8 @@ public class compilerMainView extends javax.swing.JFrame {
         // TODO add your handling code here:
         String input = jTextArea1.getText();
         scanner scan = new scanner();
-        scan.generateScanner(input);
+        char[] stringToCharArray = input.toCharArray();
+        scan.generateScanner(stringToCharArray);
         String output = scan.getResult();
         jTextArea2.setText(output);
     }//GEN-LAST:event_scanActionPerformed

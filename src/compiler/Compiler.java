@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package compiler;
+import parser.parser;
 import view.compilerMainView ;
 /**
  *
@@ -16,8 +17,12 @@ public class Compiler {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
         compilerMainView mainView = new compilerMainView();
         mainView.show();
+      /*  parser parser=new parser("@craf ID{Sipokf x ;}#");
+
+                parser.algorithm();*/
     }
     
 }
